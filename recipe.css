@@ -1,193 +1,190 @@
 * {
-    /*Poderia colocar esse comando no container principal e evitar o mesmo erro*/
+    margin: 0;
+    padding: 0;
     overflow: auto;
 }
 
-/*Comentário em CSS*/
 body {
-    background-color: #8BA1BB;
-    font-family: Arial;
-    margin: 0;
-    padding: 0;
-}
-
-.center {
-    text-align: center;
-    width: 100%;
-}
-
-div.category {
-    margin-top: 0px;
-    margin-bottom: -40px;
-}
-
-p.category {
-    display: inline-block;
-    background-color: black;
-    color: white;
-    padding: 15px 30px;
-    font-weight: bold;
-    font-size: 18px;
+    background-color: #e7e2f2;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 div.content {
-    background-color: white;
-    box-shadow: black;
-    margin: 0px 2% 10px 2%;
-    padding: 0px 8px 20px 8px;
-    /*min-width: 350px;*/
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    background-color: snow;
+    margin: 50px 2% 2% 2%;
+    padding: 60px 20px;
+    min-width: 200px;
+    box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 20%);
 }
 
 h1 {
     text-align: center;
 }
 
-p.description {
+h3 {
     display: inline-block;
-    max-width: 400px;
+    text-align: center;
+    max-width: 600px;
+}
+
+div.center {
+    text-align: center;
+}
+
+div.description {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div.category {
+    margin: 40px 20% -85px 20%;
+    min-width: 200px;
+}
+
+p.category {
+    display: inline-block;
+    background-color: #3B1E54;
+    box-shadow: 0px 0px 4px 2px rgb(0 0 0 / 20%);
+    color: snow;
+    padding: 20px 40px;
+    font-weight: bold;
+    font-size: large;
 }
 
 div.separator {
-    height: 1px;
-    width: 200px;
     background-color: black;
+    height: 1px;
+    width: 30%;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
 
 div.info {
     position: relative;
+    margin-bottom: 20px;
 }
 
 table.info {
     position: absolute;
     bottom: 0;
+    height: 120px;
     width: 100%;
-    color: white;
-    background-color: #6c829dc0;
-    height: 60px;
+    color: snow;
+    background-color: #3B1E54c0;
 }
 
 table.info td {
     text-align: center;
     vertical-align: top;
-    font-size: 12px;
+    padding-top: 5px;
 }
 
 table.info th {
     vertical-align: bottom;
-    padding-bottom: 8px;
-    font-size: 14px;
+    padding-bottom: 5px;
+    font-size: large;
 }
 
 img.info {
     display: block;
-    max-height: 400px;
+    width: 100%;
+    max-height: 600px;
+    min-width: 200px;
     object-fit: cover;
-    min-height: 200px;
-    background-color: lightgray;
+    background-color: lightgrey;
 }
 
 div.col {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-div.col h2 {
-    text-align: center;
+div.col h1 {
     text-transform: uppercase;
-    font-size: 16px;
-    border-bottom: 5px solid #6c8290;
-    padding-bottom: 5px;
+    text-align: center;
+    font-size: x-large;
+    border-bottom: 1px solid #757575;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 div.col1 {
-    /*background-color: #8BA1BB;*/
-    display: inline-block;
+    display: block;
+    /*margin-right: 10%;*/
 }
 
-/*
 div.col2 {
-    background-color: azure;
-    float: right;
+    /*float: right;*/
 }
-*/
 
-div.ingredients p {
+div.ingredient p {
+    font-size: large;
+    font-weight: bold;
     text-align: center;
-    font-size: 14px;
-    border: 1px solid lightgrey;
-    padding: 10px;
-    margin-top: 4px;
-    margin-bottom: 0;
+    border: 1px solid #757575;
+    padding: 20px 0;
+    margin-bottom: 5px;
 }
 
 table.instructions p.number {
-    background-color: #6c8290;
-    color: white;
-    font-size: 16px;
+    font-size: large;
     font-weight: bold;
-    width: 30px;
-    height: 30px;
-    padding-top: 8px;
-    box-sizing: border-box;
+    color: snow;
+    background-color: #3B1E54;
+    padding: 20px 25px;
     border-radius: 50%;
-    text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
-table.instructions td.instruction_step {
-    padding-left: 10px;
-    padding-bottom: 10px;
-    font-size: 14px;
+table.instructions td.instructions_step {
+    font-size: large;
+    padding-left: 20px;
+    font-weight: bold;
 }
 
-table.instructions td p {
-    vertical-align: top;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
-table.instructions tr {
-    height: 40px;
-}
-
-/*Desktop styles*/
 @media only screen and (min-width: 768px) {
     div.content {
-        margin: 0px 10% 80px 10%;
-        padding: 30px;
-        min-width: 350px;
+        margin: 50px 10% 5% 10%;
     }
 
     table.info {
-        height: 80px;
+        height: 120px;
+        background-color: #54473Fc1;
     }
-
+    
     table.info td {
-        font-size: 14px;
+        padding-top: 5px;
     }
-
+    
     table.info th {
-        font-size: 16px;
+        padding-bottom: 5px;
     }
 
     div.col {
         width: 45%;
     }
 
+    div.col1 {
+        display: inline-block;
+        margin-right: 10%;
+    }
+
     div.col2 {
-        /*background-color: azure;*/
         float: right;
     }
+    table.instructions p.number {
+        background-color: #54473F;
+    }
+    p.category {
+        background-color: #54473F;
+    }
 }
-
-/*Big screens*/
+/* Big screens */
 @media only screen and (min-width: 900px) {
     div.content {
         margin-left: auto;
         margin-right: auto;
-        width: 652px;
+        width: 80%;
     }
 }
